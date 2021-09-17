@@ -1,0 +1,143 @@
+:root {
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+    --neutral-link-blue: hsl(228, 45%, 44%); 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-color: var(--primary-pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+  
+.card {
+    width: 375px;
+    margin: 75px auto;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 30px 0 rgba(31, 47, 86, .1);
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--neutral-dark-blue);
+}
+
+.card-body {
+    padding: 15px 30px 5px 30px;
+}
+
+.card-text {
+    margin-bottom: 25px;
+    text-align: center;
+    color: var(--neutral-desaturated-blue);
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.card-sales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    background-color: var(--neutral-very-pale-blue);
+}
+
+.card-price {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--neutral-dark-blue);
+}
+
+.card-price span {
+    display: block;
+    color: var(--neutral-desaturated-blue);
+    font-weight: 500;
+}
+
+.card-link {
+    color: var(--primary-bright-blue);
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: var(--neutral-link-blue);
+}
+
+.btn {
+    display: block;
+    width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: transparent;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: var(--primary-bright-blue);
+    color: white;
+    box-shadow: 0 10px 25px 5px rgba(56, 41, 224, .3) ;
+}
+
+.btn-blue:hover {
+    background-color: var(--neutral-link-blue);
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: var(--neutral-desaturated-blue);
+}
+
+.btn-ghost:hover{
+    color: var(--neutral-dark-blue);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--neutral-link-blue); 
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+  }
+  
